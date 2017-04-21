@@ -1,7 +1,8 @@
 ## 环形渐变进度条
 引入#import "BezierPathView.h"头文件
 直接初始化创建就行了
- BezierPathView *bezierV = [[BezierPathView alloc] init];
+
+>  BezierPathView *bezierV = [[BezierPathView alloc] init];
     bezierV.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     //设置环形比例
     bezierV.progress = 0.6;
@@ -15,6 +16,7 @@
     bezierV.colorArray = @[@"#C4FF2B",@"#FFE632",@"#FF6B44"];
     
     [self.view addSubview:bezierV];
+
 ![Alt text](./1492753414903.png)
 
 
